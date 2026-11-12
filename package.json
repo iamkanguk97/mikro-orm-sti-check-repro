@@ -1,0 +1,23 @@
+{
+  "name": "mikro-orm-sti-check-repro",
+  "private": true,
+  "type": "module",
+  "description": "MikroORM 버그 재현: STI 자식에만 있는 속성에 @Check를 붙이면 MikroORM.init()이 멈춤",
+  "scripts": {
+    "case1": "tsx src/cases/1-bug.ts",
+    "case2": "tsx src/cases/2-no-check.ts",
+    "case3": "tsx src/cases/3-workaround.ts",
+    "case4": "tsx src/cases/4-class-with-property.ts",
+    "source": "tsx src/show-mikroorm-source.ts",
+    "peek": "tsx src/peek.ts"
+  },
+  "dependencies": {
+    "@mikro-orm/core": "7.2.8",
+    "@mikro-orm/decorators": "7.2.8",
+    "@mikro-orm/sqlite": "7.2.8",
+    "reflect-metadata": "0.2.2"
+  },
+  "devDependencies": {
+    "tsx": "4.23.15"
+  }
+}
