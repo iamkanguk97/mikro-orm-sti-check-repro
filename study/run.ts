@@ -25,7 +25,7 @@ export async function run(title: string, entities: unknown[]) {
       console.log(`  ${line.trim().replace(/\(.*node_modules\//, '(node_modules/')}`);
     }
     console.log('\n→ 모두 node_modules/@mikro-orm/core 안입니다. 이 저장소의 코드가 아니라 MikroORM 안에서 멈춘 것입니다.');
-    console.log('→ 멈춘 줄을 보려면: npm run source');
+    console.log('→ 멈춘 줄을 보려면: npm run study:source');
     return;
   }
 
